@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[6]={7,1,5,3,10,5};
+    int d=0,mp=0;
+    for(int i=0;i<6;i++){
+        for(int j=i+1;j<6;j++){
+            if(a[i]<a[j]){
+                d=a[j]-a[i];
+                mp=mp<d?d:mp;
+            }
+        }
+    }
+    printf("%d",mp);
+    return 0;
+}
